@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <form name="csv_statement" method="post" action="items/download">
+      <select name="kosen_school" id="kosen[school]" onchange="selSchool(this);"></select>
+      <select name="kosen_department" id="kosen[department]"></select>
+      <button type="submit">ダウンロード</button>
+    </form>
+  </div>
+</div>
+
+<%= javascript_include_tag "select.js" %>
